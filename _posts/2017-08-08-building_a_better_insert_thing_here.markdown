@@ -32,7 +32,7 @@ Many of my friends are engineers, working on really interesting problems (and a 
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
-A job opportunity at a startup presented itself. I pulled the trigger and - with no experience at all - dove headfirst into the tech industry. I started on the customer-facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
+A job opportunity at an awesome startup presented itself. I pulled the trigger and dove headfirst into the tech industry. I started on the customer-facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
 
 I loved learning about what the engineers were working on. I would stalk their PRs, sneak into their meetings and read their tech specs to better understand what went on under the hood. I asked them to explain their projects to a far more technical degree than I needed to do my job. I wanted to do their jobs.
 
@@ -42,9 +42,9 @@ Then... the magic happens. You figure out the honestly simple roadblock you hit.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/If9hD"><a href="//imgur.com/If9hD"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-Elation. You share your triumph with everyone. They respond somewhere on the spectrum from amusement to confusion to disappointment. 
+Elation. You share your triumph with everyone. They respond somewhere on the spectrum from mild amusement to confusion to disappointment. 
 
-You don't care. You know you're the smartest person in the world. You blaze into the next thing. You are suddenly an idiot again. IT'S GREAT.
+You don't care. You know you're the smartest person in the world. You blaze forth into the next thing. You are suddenly an idiot again. You cry a little. IT'S GREAT.
 
 I want to create things that maybe kinda suck at first, then make them suck less, until they're pretty good.
 I want to be an engineer.
