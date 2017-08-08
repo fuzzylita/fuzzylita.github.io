@@ -32,7 +32,7 @@ Many of my friends are engineers, working on really interesting problems (and a 
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
-A job opportunity at a startup presented itself, and while I had no experience at all, I pulled the trigger, and moved to the tech industry. I started on the customer facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
+A job opportunity at a startup presented itself. I pulled the trigger - with no experience at all - and dove headfirst into the tech industry. I started on the customer facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
 
 I loved learning about what the engineers were working on. I would stalk their PRs, sneak into their meetings and read their tech specs to better understand what went on under the hood. I asked them to explain their projects to a far more technical degree than I needed to do my job. I wanted to do their jobs.
 
