@@ -29,7 +29,7 @@ and slowly came to realize that I was in the wrong place for a lifelong career.
 
 Many of my friends are engineers. I saw the things they were working on, and I was envious. So many cool things to make. So many dryly hilarious programs, inside jokes, and stupid nonsense you can create, just for the lols. 
 
-(I mean, come on. This is sheer brilliance:  [](http://terriblecolors.com/))
+(I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
 A job opportunity at a startup presented itself, and while I had no experience at all, I pulled the trigger, and moved to the tech industry. I started on the customer facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
 
