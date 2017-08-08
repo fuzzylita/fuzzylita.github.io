@@ -11,11 +11,11 @@ I waste an embarassing number of hours that really should be spent reading a boo
 * Baking
 * Making cocktails
 * Cultivating plants
-* Planning more elaborate plans for the above four
+* Planning the next, more elaborate idea for the above four
 
 A lot of my creations really suck at first. 
 
-I find myself offended by the suckful creation (which clearly sucks through no fault of its own). I flail around, and rage-create a new version of the suckful thing until I have something that doesn't suck. Everyone needs a hobby.
+I'm always annoyed by my first suckful attempts. I flail around, and rage-create the next, (hopefully) better version of the suckful thing until I have something that doesn't suck. Everyone needs a hobby.
 
 I started in Molecular Biology - the professional equivalent to my first 'real' relationship. It's very cool. Very like my hobbies. You grind away to understand the inner workings of biological systems, and in practice, you use what you know to interact with proteins in living cells. It rarely works the first time, but when it does, it's pretty magical. I felt like Harry Potter. 
 
@@ -23,7 +23,7 @@ Alas, professional application is always different. I was a good molecular biolo
 
 5 years in, I went a little...
 
-<iframe src="https://giphy.com/embed/LxYxjcPVWoUvu" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/insanity-LxYxjcPVWoUvu">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/V18GzVC9EVzws" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sailor-moon-V18GzVC9EVzws">via GIPHY</a></p>
 
 and slowly came to realize that I was in the wrong place for a lifelong career.
 
