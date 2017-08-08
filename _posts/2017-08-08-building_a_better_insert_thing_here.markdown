@@ -19,7 +19,7 @@ I'm always annoyed by my first suckful attempts. I flail around, and rage-create
 
 I started in Molecular Biology - the professional equivalent to my first 'real' relationship. It's very cool. Very like my hobbies. You grind away to understand the inner workings of biological systems, and in practice, you use what you know to interact with proteins in living cells. It rarely works the first time, but when it does, it's pretty magical. I felt like Harry Potter. 
 
-Alas, professional application is always different. I was a good molecular biologist, but my skill was essentially defined by how well I could do the same thing every day, after day... after day.
+Alas, professional application is always different. I'm a very good molecular biologist - theoretical and practical - but my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
 
 5 years in, I went a little...
 
@@ -27,7 +27,7 @@ Alas, professional application is always different. I was a good molecular biolo
 
 and slowly came to realize that I was in the wrong place for a lifelong career.
 
-Many of my friends are engineers. I saw the things they were working on, and I was envious. So many cool things to make. So many dryly hilarious programs, inside jokes, and stupid nonsense you can create, just for the lols. 
+Many of my friends are engineers, working on really interesting problems (and a few frivolous ones). I was envious of their work and their technical know-how. So many cool things to make. So many dryly hilarious programs, inside jokes, and stupid nonsense you can create, just for the lols. 
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
