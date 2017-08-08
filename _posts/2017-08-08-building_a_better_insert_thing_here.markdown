@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a better {{insert thing here}}"
-date:   2017-08-08 18:45:01 +0000
+date:   2017-08-08 14:45:02 -0400
 ---
 
 I *love* to create things.
@@ -31,11 +31,9 @@ Many of my friends are engineers. I saw the things they were working on, and I w
 
 (I mean, come on. This is sheer brilliance: http://terriblecolors.com/)
 
-A job opportunity at a startup presented itself, and while I had no experience at all, I pulled the trigger, and moved to the tech industry. I started in support and customer success, communicating technical concepts to a technical audience. I liked it, learned a ton, and I was pretty good at it, but I truly wanted to build stuff. 
+A job opportunity at a startup presented itself, and while I had no experience at all, I pulled the trigger, and moved to the tech industry. I started on the customer facing side, but quickly moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it, but it was never quite enough. I wanted to build stuff. 
 
-I moved to Product Management, a little closer to the making-stuff side of the company. I was pretty good and I liked it too, but it was never quite enough. I still wanted to build stuff. 
-
-I loved understanding deeply what the engineers were working on. I would read their PRs, sneak into their meetings and stalk their documentation to understand the product better from an engineering perspective. I asked them to explain their projects to a far more technical degree than I needed to do my job. I envied our sysadmins. I wanted to do their jobs.
+I loved learning about what the engineers were working on. I would stalk their PRs, sneak into their meetings and read their tech specs to better understand what went on under the hood. I asked them to explain their projects to a far more technical degree than I needed to do my job. I wanted to do their jobs.
 
 I decided to start coding, just to see if I'd be genuinely terrible at it. I began learning through experienced friends and online coding programs, and got a feel for what it's like... You make terrible, *terrible* mistakes. You bash your head against an intellectual brick wall. You feel like the biggest idiot. Capable of the intellectual equivalent of banging two rocks together. 
 
