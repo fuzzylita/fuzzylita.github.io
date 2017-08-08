@@ -35,7 +35,7 @@ A job opportunity at a startup presented itself, and while I had no experience a
 
 I loved learning about what the engineers were working on. I would stalk their PRs, sneak into their meetings and read their tech specs to better understand what went on under the hood. I asked them to explain their projects to a far more technical degree than I needed to do my job. I wanted to do their jobs.
 
-I decided to start coding, just to see if I'd be genuinely terrible at it. I began learning through experienced friends and online coding programs, and got a feel for what it's like... You make terrible, *terrible* mistakes. You bash your head against an intellectual brick wall. You feel like the biggest idiot. Capable of the intellectual equivalent of banging two rocks together. 
+I decided to start coding, just to see if I'd be genuinely terrible at it. I began learning through experienced friends and online coding programs, and got a feel for what it's like... You make terrible, *terrible* mistakes. You sometimes bash your head against an intellectual brick wall. You feel like the biggest idiot ever.
 
 Then... the magic happens. You figure out the honestly simple roadblock you hit. You feel like the smartest person in the world. You create a platypus with JavaScript.
 
