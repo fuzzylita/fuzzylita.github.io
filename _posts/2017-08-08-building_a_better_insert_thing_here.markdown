@@ -23,9 +23,9 @@ Alas, professional application is always different. I was a good molecular biolo
 
 5 years in, I went a little...
 
-<iframe src="https://giphy.com/embed/V18GzVC9EVzws" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sailor-moon-V18GzVC9EVzws">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/LxYxjcPVWoUvu" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/insanity-LxYxjcPVWoUvu">via GIPHY</a></p>
 
-and accepted that I was in the wrong place for a lifelong career.
+and slowly came to realize that I was in the wrong place for a lifelong career.
 
 Many of my friends are engineers. I saw the things they were working on, and I was envious. So many cool things to make. So many dryly hilarious programs, inside jokes, and stupid nonsense you can create, just for the lols. 
 
