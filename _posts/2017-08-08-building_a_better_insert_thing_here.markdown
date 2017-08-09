@@ -32,21 +32,23 @@ Many of my friends are software engineers, working on really interesting problem
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
-When an opportunity at an interesting startup presented itself, I went for it and dove headfirst into the tech world. I started on the customer-facing side, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build things. 
+When an opportunity at a super interesting startup presented itself, I went for it and dove headfirst into the tech world. I started on the customer-facing side, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build things. 
 
-I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts. *Far* more technical than I needed in order to do my job. I loved their work. I wanted to do their jobs. (There's a Little Mermaid reference begging to be made here).
+I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts, *far* more technical than I needed in order to do my job. I loved their work. I wanted to do their jobs.
 
-I decided to start coding, just to see if I'd actually enjoy it, and wouldn't be horrendously awful. I began learning through experienced friends and online coding programs, and got a feel for what it's really like... You make terrible, *terrible* mistakes. You sometimes bash your head against an intellectual brick wall. You feel like the biggest idiot ever.
+I decided to start coding, to see if I'd actually enjoy it. I began learning through experienced friends and online coding programs, and got a feel for what it's really like... 
 
-Then... the magic happens. You figure out the (usually simple) roadblock you hit. You feel like the smartest person in the world. You create a platypus with JavaScript.
+You make terrible, *terrible* mistakes. You sometimes bash your head against an intellectual brick wall. You feel like the biggest idiot ever.
+
+Then... the magic happens. You figure out the usually simple roadblock you hit. You feel like the smartest person in the world. You create a platypus with JavaScript.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/If9hD"><a href="//imgur.com/If9hD"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-Elation. You share your triumph with everyone, receiving responses somewhere on the spectrum from mild amusement to confusion to disappointment. 
+Elation. You share your triumph with everyone, eliciting responses somewhere on the spectrum from mild amusement to confusion to disappointment. 
 
 You don't care. You're the smartest person in the world. You blaze forth into the next thing... You are suddenly an idiot again. You cry a little. 
 
-IT'S GREAT.
+IT'S AWESOME.
 
 I want to create things that maybe kinda suck at first, then make them suck less, until they're pretty good.
 I want to be an engineer.
