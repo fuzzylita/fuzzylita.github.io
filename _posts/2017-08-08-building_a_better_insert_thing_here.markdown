@@ -20,7 +20,7 @@ I'm always annoyed by my first suckful attempts. I flail around, and rage-create
 
 I started in Molecular Biology - the professional equivalent to my first 'real' relationship. It's very cool. Very like my hobbies. You grind away to understand the inner workings of biological systems, and in practice, you use what you know to interact with proteins in living cells. Things rarely work the first (or second, or tenth) time, but when they do, it's truly magical.  
 
-I'm a pretty good molecular biologist - theoretical and practical - but in practice, my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
+I'm a good molecular biologist - theoretical and practical - but in practice, my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
 
 5 years into my professional life, I went a little...
 
@@ -28,7 +28,7 @@ I'm a pretty good molecular biologist - theoretical and practical - but in pract
 
 and slowly came to realize that I was in the wrong place for a lifelong career.
 
-Many of my friends are software engineers, working on really interesting problems (and a few frivolous ones). I was envious of their work and their technical know-how. So many cool things they could make. So many dryly hilarious programs, inside jokes, and stupid nonsense they could create, just for the lols. 
+Many of my friends are software engineers, working on really interesting problems (and a few frivolous ones). I was envious of their work and their technical know-how. So many cool things they could make. So many dryly hilarious programs, inside jokes, and stupid nonsense they could build on a whim, just for the lols. 
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
@@ -42,7 +42,7 @@ Then... the magic happens. You figure out the (usually simple) roadblock you hit
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/If9hD"><a href="//imgur.com/If9hD"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-Elation. You share your triumph with everyone. They respond somewhere on the spectrum from mild amusement to confusion to disappointment. 
+Elation. You share your triumph with everyone, receiving responses somewhere on the spectrum from mild amusement to confusion to disappointment. 
 
 You don't care. You're the smartest person in the world. You blaze forth into the next thing... You are suddenly an idiot again. You cry a little. 
 
