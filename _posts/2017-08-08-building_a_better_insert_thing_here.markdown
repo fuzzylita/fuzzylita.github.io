@@ -32,7 +32,7 @@ Many of my friends are software engineers, working on really interesting problem
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
-When an great job opportunity presented itself, I decided it was fate and dove headfirst into the tech world. I started on the customer-facing side, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build things. 
+When a great opportunity presented itself, I decided it was fate and dove headfirst into the tech world. I started in a customer-facing role, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build things. 
 
 I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts, *far* more technical than I needed in order to do my job. I loved their work. I wanted to be part of the action.
 
