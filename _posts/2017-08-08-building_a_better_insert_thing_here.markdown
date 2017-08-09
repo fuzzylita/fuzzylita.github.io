@@ -34,7 +34,7 @@ Many of my friends are software engineers, working on really interesting problem
 
 When an opportunity at an interesting startup presented itself, I went for it and dove headfirst into the tech world. I started on the customer-facing side, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build things. 
 
-I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts. *Far* more technical than I needed in order to do my job. I loved their work. I wanted to do their jobs.
+I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts. *Far* more technical than I needed in order to do my job. I loved their work. I wanted to do their jobs. (There's a Little Mermaid reference begging to be made here).
 
 I decided to start coding, just to see if I'd actually enjoy it, and wouldn't be horrendously awful. I began learning through experienced friends and online coding programs, and got a feel for what it's really like... You make terrible, *terrible* mistakes. You sometimes bash your head against an intellectual brick wall. You feel like the biggest idiot ever.
 
