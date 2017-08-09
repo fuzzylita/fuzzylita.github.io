@@ -20,7 +20,7 @@ I'm always annoyed by my first suckful attempts. I flail around, and rage-create
 
 I started in Molecular Biology - the professional equivalent to my first 'real' relationship. It's very cool. Very like my hobbies. You grind away to understand the inner workings of biological systems, and in practice, you use what you know to interact with proteins in living cells. Things rarely work the first (or second, or tenth) time, but when they do, it's truly magical.  
 
-I'm a very good molecular biologist - theoretical and practical - but in practice, the my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
+I'm a pretty good molecular biologist - theoretical and practical - but in practice, my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
 
 5 years into my professional life, I went a little...
 
@@ -32,9 +32,9 @@ Many of my friends are software engineers, working on really interesting problem
 
 (I mean, come on. [This](http://terriblecolors.com/) is sheer brilliance.)
 
-When an opportunity at an interesting startup presented itself, I pulled the trigger and dove headfirst into the tech industry. I started on the customer-facing side, but wanted to get my hands dirtier. I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build stuff. 
+When an opportunity at an interesting startup presented itself, I went for it and dove headfirst into the tech world. I started on the customer-facing side, but I quickly moved to Product Management, a little closer to the making-stuff side of the company. I did pretty well at it, but it was never quite enough. I still wanted to build stuff. 
 
-I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts. Far more technical than I needed in order to do my job. I wanted to do their jobs.
+I wanted to learn what the engineers were doing. I would stalk their PRs, sneak into their meetings and read their tech specs to learn how our product really worked. I asked them to explain their projects down to the nuts and bolts. *Far* more technical than I needed in order to do my job. I loved it. I wanted to do their jobs.
 
 I decided to start coding, just to see if I'd be genuinely awful at it. I began learning through experienced friends and online coding programs, and got a feel for what it's really like... You make terrible, *terrible* mistakes. You sometimes bash your head against an intellectual brick wall. You feel like the biggest idiot ever.
 
