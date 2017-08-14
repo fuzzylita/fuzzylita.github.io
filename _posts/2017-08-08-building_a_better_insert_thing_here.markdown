@@ -51,4 +51,4 @@ You don't care. You're the smartest person in the world. You blaze forth into th
 IT'S AWESOME.
 
 I want to create things that maybe kinda suck at first, then make them suck less, until they're pretty good.
-I want to be an engineer.
+
