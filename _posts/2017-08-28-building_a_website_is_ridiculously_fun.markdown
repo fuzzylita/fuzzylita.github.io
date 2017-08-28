@@ -20,7 +20,7 @@ So, we're making this website, everything's going well and we're asked to push i
 
 Alas, I just can't color within the lines, so seized the opportunity for absurdity, which I don't *think* was the point of the exercise. I found a silly image of a duck and a chicken, went completely off the rails, and Chicken Realtor Group was born.
 
-![Imgur](http://i.imgur.com/IDy1uBs.jpg)
+!(http://i.imgur.com/IDy1uBs.jpg)
 
 
 My realty site ended up being thinly veiled anti-duck propaganda from the sinister chickens. Rife with hilarious, shady duck images on every page, useful information punctuated with an constant reminder. You can't trust the ducks.
