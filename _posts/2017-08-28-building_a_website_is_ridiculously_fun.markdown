@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a website is ridiculously fun."
-date:   2017-08-28 20:36:15 +0000
+date:   2017-08-28 16:36:16 -0400
 ---
 
 HTML and CSS are pretty fun! Before you even say anything, I know that HTML and CSS are to learning to code as making a box of Kraft Mac and Cheese is to learning to cook.
@@ -24,9 +24,9 @@ I found a silly image of a duck and a chicken, went completely off the rails, an
 [Imgur](http://i.imgur.com/IDy1uBs.jpg)
 
 
-My realty site ended up being thinly veiled anti-duck propaganda from the sinister chicken realtors group. With hilarious, sinister duck images for every page, punctuating the useful information found withing with an unavoidable reminder. You can't trust the ducks.
+My realty site ended up being thinly veiled anti-duck propaganda from the sinister chickens. Rife with hilarious, shady duck images on every page, useful information punctuated with an constant reminder. You can't trust the ducks.
 
-That said, becuase I wanted my joke to be funnier - to me... no one else is ever even going to see the outcome of this exercise - I ended up learned 5 times more than I would have.
+That said, becuase I wanted my joke to be funnier - to me... no one else is ever even going to see the outcome of this exercise - I ended up learned 5 times more than I could have.
 
 'I want the duck with sunglasses to be positioned dfferently, and how do I skip a line? hmm there's no space between the links to '100 sketchy duck facts'. Why doesn't that stupid selector work?'
 
