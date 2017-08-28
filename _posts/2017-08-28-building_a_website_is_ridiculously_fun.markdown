@@ -25,7 +25,7 @@ Alas, I just can't color within the lines, so seized the opportunity for absurdi
 
 My realty site ended up being thinly veiled anti-duck propaganda from the sinister chickens. Rife with hilarious, shady duck images on every page, useful information punctuated with an constant reminder. You can't trust the ducks.
 
-That said, becuase I wanted my joke to be funnier - to me... no one else is ever even going to see the outcome of this exercise - I ended up learned 5 times more than I could have.
+That said, becuase I wanted my joke to be funnier - to me... no one else is ever even going to see the outcome of this exercise - I ended up going WAY deeper than I could have, just to make it work.
 
 'I want the duck with sunglasses to be positioned dfferently, and how do I skip a line? hmm there's no space between the links to '100 sketchy duck facts'. Why doesn't that stupid selector work?'
 
