@@ -34,8 +34,12 @@ I was befuddled as to why it was only running once, *until* I realized, WHOOPS, 
 
 
 I hit an infinite loop.
-![infinite loop](https://imgur.com/a/NXcHe)
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/NXcHe"><a href="//imgur.com/NXcHe"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+...
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Kbdl3"><a href="//imgur.com/Kbdl3"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 I struggled long and hard to discover what was happening, since the code looked ok. The path of the loop was very difficult to follow, but I ultimately (with much help) debugged the problem:
 
