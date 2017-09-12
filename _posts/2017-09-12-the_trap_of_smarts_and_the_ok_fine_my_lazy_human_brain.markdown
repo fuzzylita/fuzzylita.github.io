@@ -55,6 +55,9 @@ def all_supplies_in_holidays(holiday_hash)
 ```
 
 Ick. Also, it didn't work.	
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="6pImDY8"><a href="//imgur.com/6pImDY8">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 The correct solution:
 	
 ```
