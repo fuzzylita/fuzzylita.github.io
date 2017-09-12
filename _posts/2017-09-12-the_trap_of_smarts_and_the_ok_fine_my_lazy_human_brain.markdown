@@ -6,11 +6,11 @@ date:   2017-09-12 15:21:57 -0400
 
 A number of bad habits that I didn't know I had have become very apparent to me while learning programming. Foremost among them is my tendency to jump straight to solution mode. 
 
-I'm naturally pretty good at problem solving, so I tend to just crash in head-first and just start working. Often, the challenge miraculously gets solved with very little actual thinking on my part. This works great most of the time... some of the time.
+I'm naturally pretty good at problem solving, so I tend to just crash in head-first and start working away. Often, the challenge miraculously gets solved with very little actual thinking on my part. This works great most of the time... some of the time.
 
 What I'm *not* good at is patience. Stopping, carefully analyzing the problem, and breaking it down into small pieces does not come naturally. Obviously, this skill is pretty core to success in an engineering role, and my weakness in this area has cost me many a debugging hour. 
 
-A recent exercise was a frustrating kick-in-the-butt to improve my approach to new challenges. The triggering lesson focused on iterating through nested hashes, then modifying the data you pull out to be visually presented in various ways. 
+A recent exercise was a frustrating kick-in-the-butt to improve my strategy. The lesson in question focused on iterating through nested hashes, then modifying the data you pull out to be visually presented in various ways. 
 
 I tend to be able to clearly visualize the structure of the hash, and I have a fairly solid understanding of how to access the level and element that I want to surface, so these sorts of challenges are usually pretty quick for me to solve. 
 
