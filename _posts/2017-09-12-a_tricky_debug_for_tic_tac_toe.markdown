@@ -15,10 +15,11 @@ The first problem I uncovered was with the .play method, written below. This met
 
 
 ```
-  def play
-    if !over?
-      turn
-    end 
+def play
+  if !over?
+    turn
+	end 
+end 
 ```
 
 
@@ -26,10 +27,10 @@ I was befuddled as to why it was only running once, *until* I realized, WHOOPS, 
 
 
 ```
-  def play
-    until over?
-      turn
-    end 
+def play
+  until over?
+    turn
+end 
 ```
 
 
@@ -48,17 +49,17 @@ the .play method validates whether the .over? method returns true:
 
 
 ```
-  def over?
-    @board.full? == true
-  end
+def over?
+  @board.full? == true
+end
 ```
 
 
 ```
-  def play
-    until over?
-      turn
-    end 
+def play
+  until over?
+    turn
+end 
 ```
 
 
@@ -67,14 +68,15 @@ If that's not the case, then the .play method calls .turn again (at least it doe
 
 
 ```
-  def turn
-    input = current_player.move(current_player.token)
-    if board.valid_move?(input)
-      board.update(input, current_player)
-    else
-      turn
-    end
+def turn
+  input = current_player.move(current_player.token)
+  
+	if board.valid_move?(input)
+    board.update(input, current_player)
+  else
+    turn
   end
+end
 ```
 
 
@@ -83,21 +85,21 @@ The cooperating board methods, .valid_move, .taken? and .update then determine t
 
 
 ```
-  def taken?(input)
-    position(input) == "X" || position(input) == "O"
+def taken?(input)
+  position(input) == "X" || position(input) == "O"
+end 
+
+
+def valid_move?(input)
+  input.to_i.between?(1,9) && taken?(input) == false
+end 
+
+
+def update(input, player)
+  if valid_move?(input) == true
+    @cells[input_to_index(input)] = player.token
   end 
-
-
-  def valid_move?(input)
-    input.to_i.between?(1,9) && taken?(input) == false
-  end 
-
-
-  def update(input, player)
-    if valid_move?(input) == true
-      @cells[input_to_index(input)] = player.token
-    end 
-  end 
+end 
 ```
 
 So, where on earth was my problem?
@@ -110,20 +112,19 @@ The infinite loop was resolved.
 My original code is commented out, but left for reference. 
 
 ```
-  def over?
-    # @board.full? == true
-    @board.full? || won? || draw?
-  end
+def over?
+  # @board.full? == true
+  @board.full? || won? || draw?
+end
 ```
 
 ``` 
-   def draw?
-    # over? && won? == false
-    @board.full? && won? == false
-  end
+def draw?
+  # over? && won? == false
+  @board.full? && won? == false
+end
 ```
 
-
-
+Anyone hit a similar problem?
 
 
