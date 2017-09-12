@@ -21,14 +21,14 @@ Here's the challenge I faced:
 *Iterate through holiday hash and print the items such that your readout resembles:*
 
 ```
-	Winter:
-     Christmas: Lights, Wreath
-     New Years: Party Hats
-  Summer:
-     Fourth Of July: Fireworks, BBQ
+Winter:
+	 Christmas: Lights, Wreath
+	 New Years: Party Hats
+Summer:
+	 Fourth Of July: Fireworks, BBQ
 ```
  
-And so on for the formating of the remaining holidays.
+... And so on for the formating of the remaining holidays.
 
 Breaking it down, I started with a symbol and I needed to return a string, capitalized, and with a ":" after it. I didn't really stop to think through through the difference between where I was and where I needed to get, and so got very bogged down.
 
