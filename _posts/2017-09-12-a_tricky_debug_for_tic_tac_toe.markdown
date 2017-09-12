@@ -18,8 +18,8 @@ The first problem I uncovered was with the .play method, written below. This met
 def play
   if !over?
     turn
-	end 
-end 
+  end
+end
 ```
 
 
