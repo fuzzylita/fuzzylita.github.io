@@ -20,8 +20,7 @@ The first problem I uncovered was with the .play method, written below. This met
     end 
 	```
 
-I was befuddled as to why it was only running once, *until* I realized that ```if ...```  isn't a looping method. derp. I changed to UNTIL .... and broke through that wall and solved several additional tests, but once I tried out: 
-
+I was befuddled as to why it was only running once, *until* I realized, WHOOPS, I'm an idiot...  'if, else, end'  isn't a looping method. derp. I changed to use UNTIL and broke through that wall. Solved several additional tests right away, but once I tried out: 
 
 ```
   def play
