@@ -13,14 +13,17 @@ Once I began to code the more complex code interactions I several walls, and it 
 
 The first problem I uncovered was with the .play method, written below. This method needs to cooperate with a turn method and cycle through turns until the game is over. Initially, didn't think carefully enough about the methods that I was calling and was trying to get it to work with:
 
+
 ```
   def play
     if !over?
       turn
     end 
-	```
+```
+
 
 I was befuddled as to why it was only running once, *until* I realized, WHOOPS, I'm an idiot...  'if, else, end'  isn't a looping method. derp. I changed to use UNTIL and broke through that wall. Solved several additional tests right away, but once I tried out: 
+
 
 ```
   def play
@@ -37,11 +40,13 @@ I struggled long and hard to discover what was happening, since the code looked 
 
 the .play method validates whether the .over? method returns true:
 
+
 ```
   def over?
     @board.full? == true
   end
 ```
+
 
 ```
   def play
@@ -50,8 +55,10 @@ the .play method validates whether the .over? method returns true:
     end 
 ```
 
+
 over? returns true if the board is full. 
 If that's not the case, then the .play method calls .turn again (at least it does now, with the single loop problem resolved).
+
 
 ```
   def turn
@@ -64,24 +71,27 @@ If that's not the case, then the .play method calls .turn again (at least it doe
   end
 ```
 
+
 For reference, the .move method here just asks for a numerical input, and saves it to a variable.
 The cooperating board methods, .valid_move, .taken? and .update then determine the next step.
+
 
 ```
   def taken?(input)
     position(input) == "X" || position(input) == "O"
   end 
 
+
   def valid_move?(input)
     input.to_i.between?(1,9) && taken?(input) == false
   end 
+
 
   def update(input, player)
     if valid_move?(input) == true
       @cells[input_to_index(input)] = player.token
     end 
   end 
-end 
 ```
 
 So, where on earth was my problem?
