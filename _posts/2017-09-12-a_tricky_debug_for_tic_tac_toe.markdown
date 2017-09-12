@@ -34,7 +34,7 @@ I was befuddled as to why it was only running once, *until* I realized, WHOOPS, 
 
 
 I hit an infinite loop.
-![]https://imgur.com/a/NXcHe
+![infinite loop](https://imgur.com/a/NXcHe)
 
 
 I struggled long and hard to discover what was happening, since the code looked ok. The path of the loop was very difficult to follow, but I ultimately (with much help) debugged the problem:
