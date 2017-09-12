@@ -97,6 +97,6 @@ To try and force myself to follow better habits, I'm working on a process to wal
 * Replace the pseudo-code with real code
 * Optimize the real code
 
-		So far, it's helped... most of the time. I still fall into my lazy habits if I'm tired or if I'm absolutely confident that I know what I'm doing (which is a warning sign in itself 😱) but I'm getting better!
+So far, it's helped... most of the time. I still fall into my lazy habits if I'm tired or if I'm absolutely confident that I know what I'm doing (which is a warning sign in itself 😱) but I'm getting better!
 
-	Any other strategies to force yourself to slow down and evaluate before you start?
+Any other strategies you've found to force yourself to slow down be more strategic?
