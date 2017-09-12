@@ -21,36 +21,40 @@ Here's the challenge I faced:
 *Iterate through holiday_hash and print the items such that your readout resembles:*
 
 ```
+
 Winter:
-	Christmas: Lights, Wreath
-	New Years: Party Hats
+  Christmas: Lights, Wreath
+  New Years: Party Hats
 Summer:
-	Fourth Of July: Fireworks, BBQ
+  Fourth Of July: Fireworks, BBQ
+	...
 ```
- 
-... And so on for the formating of the remaining holidays.
+
+So on for the formatting of the remaining seasons and holidays.
 
 Breaking it down, I started with a symbol and I needed to return a string, capitalized, and with a ":" after it. I didn't really stop to think through through the difference between where I was and where I needed to get, and so got very bogged down.
 
 Where I eventually sloppily ended up: 
 
 ```
+
 decorations = []
 
 def all_supplies_in_holidays(holiday_hash)
 
-	holiday_hash.each do |season, holidays|
-		decorations << season.to_s.capitalize + ":"
+  holiday_hash.each do |season, holidays|
+    decorations << season.to_s.capitalize + ":"
 
-		holidays.each do |holiday, details|
-			holiday = holiday.to_s.capitalize + ": "
-			holiday << details.to_s
+    holidays.each do |holiday, details|
+      holiday = holiday.to_s.capitalize + ": "
+      holiday << details.to_s
+      decorations << holiday
+    end
+  end
 
-			decorations << holiday
-		end
-	end
-	puts decorations.flatten
+puts decorations.flatten
 end
+
 ```
 
 Whan an ugly heap. Let's not even talk about the spacing (I've gotten better) ... 💩 Not to mention that it didn't actually work.	
@@ -62,14 +66,14 @@ The correct solution:
 ```
 
 def all_supplies_in_holidays(holiday_hash)
-	holiday_hash.each do |season, season_holidays|
-		puts "#{season.to_s.capitalize}:"
+  holiday_hash.each do |season, season_holidays|
+    puts "#{season.to_s.capitalize}:"
 
-		season_holidays.each do |holiday, decorations|
-			holiday_string = holiday.to_s
-			puts "  #{holiday_string.split("_").map {|el| el.capitalize}.join(" ")}: #{decorations.join(", ")}"
-		end
-	end
+    season_holidays.each do |holiday, decorations|
+      holiday_string = holiday.to_s
+      puts "  #{holiday_string.split("_").map {|el| el.capitalize}.join(" ")}: #{decorations.join(", ")}"
+    end
+  end
 end
 
 ```
