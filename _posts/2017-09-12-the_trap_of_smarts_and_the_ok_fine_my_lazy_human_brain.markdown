@@ -22,10 +22,10 @@ Here's the challenge I faced:
 
 ```
 Winter:
-  Christmas: Lights, Wreath
-  New Years: Party Hats
+	Christmas: Lights, Wreath
+	New Years: Party Hats
 Summer:
-	 Fourth Of July: Fireworks, BBQ
+	Fourth Of July: Fireworks, BBQ
 ```
  
 ... And so on for the formating of the remaining holidays.
@@ -39,21 +39,21 @@ decorations = []
 
 def all_supplies_in_holidays(holiday_hash)
 
-  holiday_hash.each do |season, holidays|
-    decorations << season.to_s.capitalize + ":"
-		
-      holidays.each do |holiday, details|
-				holiday = holiday.to_s.capitalize + ": "
-        holiday << details.to_s
-				
-      decorations << holiday
-    end
+	holiday_hash.each do |season, holidays|
+		decorations << season.to_s.capitalize + ":"
+
+		holidays.each do |holiday, details|
+			holiday = holiday.to_s.capitalize + ": "
+			holiday << details.to_s
+
+			decorations << holiday
+		end
 	end
-	
-  puts decorations.flatten
+	puts decorations.flatten
+end
 ```
 
-Whan an ugly heap. Let's not even talk about the spacing ... 💩 Not to mention that it didn't actually work.	
+Whan an ugly heap. Let's not even talk about the spacing (I've gotten better) ... 💩 Not to mention that it didn't actually work.	
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="6pImDY8"><a href="//imgur.com/6pImDY8">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
@@ -62,15 +62,14 @@ The correct solution:
 ```
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, season_holidays|
-    puts "#{season.to_s.capitalize}:"
+	holiday_hash.each do |season, season_holidays|
+		puts "#{season.to_s.capitalize}:"
 
-    season_holidays.each do |holiday, decorations|
-      holiday_string = holiday.to_s
-
-      puts "  #{holiday_string.split("_").map {|el| el.capitalize}.join(" ")}: #{decorations.join(", ")}"
-    end
-  end
+		season_holidays.each do |holiday, decorations|
+			holiday_string = holiday.to_s
+			puts "  #{holiday_string.split("_").map {|el| el.capitalize}.join(" ")}: #{decorations.join(", ")}"
+		end
+	end
 end
 
 ```
@@ -94,6 +93,6 @@ To try and force myself to follow better habits, I'm working on a process to wal
 * Replace the pseudo-code with real code
 * Optimize the real code
 
-So far, it's helped... most of the time. I still fall into my lazy habits if I'm tired or if I'm absolutely confident that I know what I'm doing (which is a warning sign in itself 😱) but I'm getting better!
+		So far, it's helped... most of the time. I still fall into my lazy habits if I'm tired or if I'm absolutely confident that I know what I'm doing (which is a warning sign in itself 😱) but I'm getting better!
 
-Any other strategies to force yourself to slow down and evaluate before you start?
+	Any other strategies to force yourself to slow down and evaluate before you start?
