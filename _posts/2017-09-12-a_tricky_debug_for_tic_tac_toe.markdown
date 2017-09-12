@@ -37,9 +37,10 @@ I hit an infinite loop.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/NXcHe"><a href="//imgur.com/NXcHe"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
+My brain immediately:
+
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/Kbdl3"><a href="//imgur.com/Kbdl3"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-[Imgur](https://i.imgur.com/6pImDY8.gifv)
 
 I struggled long and hard to discover what was happening, since the code looked ok. The path of the loop was very difficult to follow, but I ultimately (with much help) debugged the problem:
 
