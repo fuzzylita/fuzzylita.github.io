@@ -18,12 +18,12 @@ Unfortunately, this also means that I can be intellectually lazy about the probl
 
 Here's the challenge I faced:
 
-*Iterate through holiday hash and print the items such that your readout resembles:*
+*Iterate through holiday_hash and print the items such that your readout resembles:*
 
 ```
 Winter:
-	 Christmas: Lights, Wreath
-	 New Years: Party Hats
+  Christmas: Lights, Wreath
+  New Years: Party Hats
 Summer:
 	 Fourth Of July: Fireworks, BBQ
 ```
@@ -35,24 +35,25 @@ Breaking it down, I started with a symbol and I needed to return a string, capit
 Where I eventually sloppily ended up: 
 
 ```
-
 decorations = []
 
 def all_supplies_in_holidays(holiday_hash)
 
   holiday_hash.each do |season, holidays|
-	
     decorations << season.to_s.capitalize + ":"
+		
       holidays.each do |holiday, details|
 				holiday = holiday.to_s.capitalize + ": "
         holiday << details.to_s
+				
       decorations << holiday
     end
 	end
+	
   puts decorations.flatten
 ```
 
-Whan an ugly heap. 💩 Not to mention that it didn't actually work.	
+Whan an ugly heap. Let's not even talk about the spacing ... 💩 Not to mention that it didn't actually work.	
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="6pImDY8"><a href="//imgur.com/6pImDY8">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
