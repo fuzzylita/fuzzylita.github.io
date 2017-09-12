@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A tricky debug for Tic Tac Toe "
-date:   2017-09-12 22:50:55 +0000
+date:   2017-09-12 18:50:55 -0400
 ---
 
 
@@ -20,17 +20,19 @@ The first problem I uncovered was with the .play method, written below. This met
     end 
 	```
 
-I was befuddled as to why it was only running once, *until* I realized that ```if``` isn't a looping method. derp. I changed to UNTIL .... and broke through that wall and solved several additional tests, but once I tried out: 
+I was befuddled as to why it was only running once, *until* I realized that ```if ...```  isn't a looping method. derp. I changed to UNTIL .... and broke through that wall and solved several additional tests, but once I tried out: 
+
 
 ```
   def play
     until over?
       turn
     end 
-	```
+```
+
 
 I hit an infinite loop. 
-![](https://imgur.com/a/NXcHe)
+![https://imgur.com/a/NXcHe]
 
 I struggled long and hard to discover what was happening, since the code looked ok. The path of the loop was very difficult to follow, but I ultimately (with much help) debugged the problem:
 
