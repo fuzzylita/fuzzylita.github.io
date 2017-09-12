@@ -18,16 +18,15 @@ Unfortunately, this also means that I can be intellectually lazy about the probl
 
 Here's the challenge I faced:
 
-*Iterate through holidayhash and print the items such that your readout resembles:*
-   
-  ```
+*Iterate through holiday hash and print the items such that your readout resembles:*
+
+```
 	Winter:
      Christmas: Lights, Wreath
      New Years: Party Hats
   Summer:
      Fourth Of July: Fireworks, BBQ
-		 ...
-	```
+```
  
 And so on for the formating of the remaining holidays.
 
@@ -51,10 +50,9 @@ def all_supplies_in_holidays(holiday_hash)
     end
 	end
   puts decorations.flatten
-
 ```
 
-Ick. Also, it didn't work.	
+Whan an ugly heap. 💩 Not to mention that it didn't actually work.	
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="6pImDY8"><a href="//imgur.com/6pImDY8">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
@@ -78,9 +76,10 @@ end
 
 So much better!
 
-I had all of this knowledge at my fingertips and could definitely have solved this wtih a little thought but, I got too bogged down in starting to code using what first came to mind. Whoops.
+I had all of this knowledge at my fingertips and could definitely have solved this wtih a little thought but, I got too bogged down in immediately coding the first solution that came to mind. 
 
 To try and force myself to follow better habits, I'm working on a process to walk through before I ever poke out a line of code. I try follow these steps every time, even if I 'know' how to do what I need to do. Behold!
+
 
 **MY NOT-SO-GROUNDBREAKING STRATEGY FOR NOT BEING A LAZY PROGRAMMER**
 
