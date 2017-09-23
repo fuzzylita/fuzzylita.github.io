@@ -26,17 +26,19 @@ Based on some of the available guidance from the program materials, I outlined m
 
 With a well described map of my project in hand, my next challenge was to determine the best source for the the data I'd be working with, so that I could build out the skeleton of my project to fit seamlessly with minimal refactoring. 
 
-I looked around quite a bit, and scraping a website for the cocktail data did not seem to be an efficient strategy to surface the options to the user. I decided to try to find an appropriate public database with an API instead. It was a little tough to find a source for the data that I wanted, but eventually I [found the cocktail db, which looked like it would fit the bill.](http://www.thecocktaildb.com/api.php)
+I looked around quite a bit, and scraping a website for the cocktail data did not seem to be an efficient strategy to surface the options to the user. I decided to try to find an appropriate public database with an API instead. It was a little tough to find a source for the data that I wanted, but eventually I found [the cocktail db](http://www.thecocktaildb.com/api.php), which looked like it would fit the bill.
 
-Plan, and data model decided on, I began to design and optimize the user workflow, dialing in just what information would need to be surfaced at what time, and ensuring that I'd be covering edge cases. To make sure that the user facing logic was correct and would behave as I intended, I created a hash to simulate containing nested layers of Bases, Drinks and Recipes which would eventually be piped in from the database I had selectd. 
+Plan, and data model decided on, I began to design and optimize the user workflow, dialing in just what information would need to be surfaced at what time, and ensuring that I'd be covering edge cases. To make sure that the user-facing logic was correct and would behave as I intended, I created a hash to simulate the multiple calls for bases, drinks and recipes (which would eventually come from the API response). 
 
-Completing the logic with static data went surprisingly quickly, and having this built out in advance meant that all I would need to do at the end is hook up the API, and make some small improvements to allow for its use. I completed the whole workflow in less than a day! I was very encouraged and it really helped me with the confidence to take on the API integration.
+Completing the user experience with static data went surprisingly quickly, meaning that all I would need to do at the end is hook up the API, and make some small improvements to allow for its use. I completed the whole workflow in less than a day! This success really boosted my confidence to take on the API integration.
 
-It was a good thing that I had that little confidence boost, as the next (and by far the biggest) challenge was to figure out how to use this api, as it had no documentation whatsoever..
+It was a good thing that I had that little confidence boost, as the next (and by far the biggest) challenge was to figure out how to use this api, as it had no documentation whatsoever, and the response returned a stringIO object, something that I'd never encountered and didn't know how to interact with. ...
 
-The format of the data that the API was a stringIO object, not something that I'd encountered or new how to interact with. Fortunately, some slightly frustrated googling and some extremely helpful friends in the industry helped to get me on the right track. 
+<iframe src="https://giphy.com/embed/OURWV9iDaWb7O" width="480" height="358" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/falling-shocked-OURWV9iDaWb7O">via GIPHY</a></p>
 
-I eventually ended up with exactly what I needed from the API request:
+Fortunately, some slightly frustrated googling and some extremely helpful friends in the industry helped to get me on the right track. 
+
+With some console tinkering to figure out how to navigate the response, I eventually ended up with exactly what I needed out of the API:
 
 ```
  #this code returns an object which contains all of the drinks using that base
@@ -73,7 +75,7 @@ Within 3 days, my gem was done and ready to go! I finished it up with some extre
                             /|     /|                            
                           // ( `""-                             
                         \\| /      .\\___                         
-                        /        .      4                        
+                        /        .        4                        
                        /              _ /                        
                       /            .--'                          
                      (              \\                          
@@ -82,7 +84,7 @@ Within 3 days, my gem was done and ready to go! I finished it up with some extre
         ,         /              \\   \\ \\                       
         )\\      /                \\   \\                        
       \\/  |   .'`   _                \\           \\______/_/        
-    \\.   /  .'       '.        ,\\ \\/              \\   (o)/         
+    \\.   /  .'       '.        ,\\ \\/               \\   (o)/         
   \\'   /   /          \\  ;    |   /                \\  ' /          
   \\'   \\  |           |  |    |  '                  \\  /           
     \\,   `" |           /.|   | |                    ||            
