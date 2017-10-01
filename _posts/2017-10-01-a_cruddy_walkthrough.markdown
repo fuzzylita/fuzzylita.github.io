@@ -21,7 +21,7 @@ Let's go through the steps, and what is going on along the way:
 The user makes a GET request to '/posts/new' by entering the address into their browser's navigation bar.
 Our controller processes that request by rendering the content at new.erb
 
-```
+```ruby
 get '/posts/new' do
   erb :new
 end
@@ -29,7 +29,7 @@ end
 
 That content consists of a form that submits a POST request to '/posts'
 
-```
+```html
 <form action="/posts" method="POST">
   Post Title: <input type="text" name="name" id="name">
   Post Content: <input type="text" name="content" id="content">
@@ -41,7 +41,7 @@ When the controller receives a post request to '/posts' it responds by creating 
 
 The new Post is created using ActiveRecord methods and the param values for Post.name and Post.content, which were defined by the form entries. It then concludes by showing the user the complete list of existing posts (using the ActiveRecord method .all). You could just as easily build the response to display the single post if you like, I just happened to build it this way.
 
-```
+```ruby
 post '/posts' do
   @post = Post.create(params)
   @posts = Post.all
@@ -54,7 +54,7 @@ end
 
 If the controller receives a GET request to '/posts'. It responds by rendering the code defined in index.erb (below). This code displays all of the existing posts to the user (using the AR (ActiveRecord) .all method).
 
-```
+```ruby
 get '/posts' do
   @posts = Post.all
   erb :index
@@ -63,7 +63,7 @@ end
 
 Notice that I am iterating through the array of Post objects and displaying the information for each, again using AR methods.
 
-```
+```html
 <h1>Current Posts</h1>
 
 <% @posts.each do |post| %>
@@ -75,14 +75,14 @@ Notice that I am iterating through the array of Post objects and displaying the 
 
 The controller can also respond to a GET request for a specific post at '/posts/:id'. It responds to this by first finding the appropriate post object using the ActiveRecord method Model.find with the same id from the POST request, and setting the object that is returned instance variable. This will allow us to work with that object. The ID is set in the params hash when the post is created, according to the **C**reate workflow above. Next, the response renders the code defined in show.erb (below). This code displays the specific post to the user.
 
-```
+```ruby
 get '/posts/:id' do
   @post = Post.find(params[:id])
   erb :show
 end
 ```
 
-```
+```html
 <h1>Post number <%= @post.id %></h1>
 
 <h2>Title: </h2> <%= @post.name %><br>
@@ -102,7 +102,7 @@ Up until now things were going okay for me, but this section got really hairy, r
 
 We know that the user will want to edit an individual post, so we'll start by setting up our controller to support updates. With the following code, the controller can respond to GET requests to ''/posts/:id/edit'. Note that we again create an instance variable @post, which points to the correct Post object, via the AR .find method for the correct ID. We can again work with the parameters for that object.
 
-```
+```ruby
 get '/posts/:id/edit' do
   @post = Post.find(params[:id])
   erb :edit
@@ -115,9 +115,15 @@ Anyway, a patch request allows you to update individual fields in an object (or 
 
 To make a patch request, you must update your config.ru with Sinatra middleware which intercepts and examines each request sent. If it finds a request containing 'name: `_method', it will customize the request type, replacing 'post' with whatever request type you enter for 'value' in the line containing _method. This is what supports the patch request type. 
 
-```
-use Rack::MethodOverride 
 
+**config.ru**
+```ruby
+use Rack::MethodOverride 
+```
+
+
+**edit.erb**
+```html
 <form action="/posts/<%= @post.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
     Edit Post Title: <input type="text" name="name" id="name" value="<%= @post.name %>">
@@ -126,11 +132,11 @@ use Rack::MethodOverride
 </form>
 ```
 
-This form above will now submit a PATCH request to '/posts/id', and when received by our controller, it responds by executing the AR .update method on the Post object with the matching id. 
+This form above will now submit a PATCH request to '/posts/:id', and when received by our controller, it responds by executing the AR .update method on the Post object with the matching id. 
 
 To make sense of the below code, remember the .update method syntax: Model.update(id, attributes)
 
-```
+```ruby
 patch '/posts/:id' do
 
   Post.update(
@@ -149,25 +155,26 @@ We're nearly done.
 
 **4. Delete**
 
-This method was much more straightforward, but I was well tired and quite discouraged by this poing, so it was still difficult for me to figure out. Let's take a look:
+This method was much more straightforward, but I was well tired and quite discouraged by this point, so it was still difficult for me to figure out. Regardless, let's make sure that doesn't happen to you, and have a look:
 
 We want to make a delete request. But how? And where should the user submit this request? Remember the form that we added to our show.erg file above? Now we'll dig into it and break it down.
 
-Similar to our PATCH request, we'll take advantage of the MethodOverride middleware, which is looking for requests containing`_method. Here we have one, with a value set to delete. 
+Similar to our PATCH request, we'll take advantage of the MethodOverride middleware, which is looking for requests containing `_method`. Here we have one, with a value set to delete. 
 
-```
+```html
 <form action="/posts/<%= @post.id %>/delete" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" id="delete" value="Delete">
 </form>
 ```
 
-This will then change our request to be a DELETE request to '/posts/:id/detete'. The controller will respond by defining an instance variable @post set to the appropriate Post object (by AR .find), and deleting the post via the AR .delete method. Finally, we render our delete.erb file, which confirms for the user that we've deleted their post.
+This will then change our request to be a DELETE request to '/posts/:id/delete'. The controller will respond by defining an instance variable @post set to the appropriate Post object (by AR .find), and deleting the post via the AR .delete method. Finally, we render our delete.erb file, which confirms for the user that we've deleted their post.
 
-```
+```ruby
 delete '/posts/:id/delete' do
   @post = Post.find(params[:id])
   @post.delete
+```
 
   erb :delete
 end
