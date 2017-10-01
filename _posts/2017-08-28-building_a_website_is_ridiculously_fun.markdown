@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building a website is ridiculously fun."
+title:  "Instant Gratification FTW!"
 date:   2017-08-28 16:36:16 -0400
 ---
 
@@ -31,4 +31,3 @@ That said, becuase I wanted my joke to be funnier - to me... no one else is ever
 
 In the end, I created something astonishingly stupid, but MAN was it fun, and I did learn a lot more about wrangling HTML and CSS than I expected. 
 
-Front-end stuff is pretty fun. I can't wait to try JavaScript.
