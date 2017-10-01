@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My lazy, human brain"
+title:  "My lazy brain"
 date:   2017-09-12 15:21:57 -0400
 ---
 
@@ -59,7 +59,7 @@ end
 
 Whan an ugly heap. Let's not even talk about the spacing (I've gotten better) ... 💩 Not to mention that it didn't actually work.	
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="6pImDY8"><a href="//imgur.com/6pImDY8">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<iframe src="https://giphy.com/embed/m8IcrEF24nLA4" width="480" height="331" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/angry-sailor-moon-annoyed-m8IcrEF24nLA4">via GIPHY</a></p>
 
 The correct solution:
 	
