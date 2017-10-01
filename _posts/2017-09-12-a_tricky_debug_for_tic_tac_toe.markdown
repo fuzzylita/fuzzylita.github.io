@@ -40,8 +40,7 @@ I hit an infinite loop.
 
 My brain immediately:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Kbdl3"><a href="//imgur.com/Kbdl3"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
+<iframe src="https://giphy.com/embed/IBkWv4OLecliM" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/what-sailor-moon-wut-IBkWv4OLecliM"></a></p>
 
 I struggled long and hard to discover what was happening, since the code looked ok. The path of the loop was very difficult to follow, but I ultimately (with much help) debugged the problem:
 
