@@ -24,7 +24,7 @@ I'm a good molecular biologist - theoretical and practical - but in practice, my
 
 5 years into my professional life, I went a little...
 
-<iframe src="https://giphy.com/embed/LxYxjcPVWoUvu" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/insanity-LxYxjcPVWoUvu">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/WEjAZ7sC1m8bm" width="480" height="317" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/who-cares-no-one-care-WEjAZ7sC1m8bm"></a></p>
 
 and slowly came to realize that I was in the wrong place for a lifelong career.
 
