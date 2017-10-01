@@ -7,7 +7,7 @@ date:   2017-10-01 17:46:13 -0400
 
 The first lab in the Sinatra secton of Flatiron's curriculum which built out the complete CRUD functionality for the first time was extraordinarily difficult for me. Made worse by the inner bully telling me that I wasn't cut out for programming, and that 'everyone else' gets it (thanks a lot brain), the logic was just not clear to me at all. 
 
-<iframe src="https://giphy.com/embed/wkhtMgJ48QdBS" width="480" height="353" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/crying-sobs-wkhtMgJ48QdBS">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/wkhtMgJ48QdBS" width="480" height="353" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/crying-sobs-wkhtMgJ48QdBS"></a></p>
 
 This walkthrough breaks down each section, what it means, and what's happening at each step. I hope that this post will both cement my knowledge, and perhaps help others cement theirs. 
 
@@ -109,11 +109,11 @@ get '/posts/:id/edit' do
 end
 ```
 
-The edit form  below will submit a PATCH request to '/posts/:id/. Personally I found this very confusing, as the code for a patch request is hard to understand at first. (It's also hard to find simple documentation. If you find a good source for beginners, let me know!) 
+The edit form  below will submit a PATCH request to '/posts/:id/'. Personally I found this very confusing, as the code for a patch request is hard to understand at first. (It's also hard to find simple documentation. If you find a good source for beginners, let me know!) 
 
 Anyway, a patch request allows you to update individual fields in an object (or resource, as I see it defined sometimes.) 
 
-To make a patch request, you must update your config.ru with Sinatra middleware which intercepts and examines each request sent. If it finds a request containing 'name: `_method', it will customize the request type, replacing 'post' with whatever request type you enter for 'value' in the line containing _method. This is what supports the patch request type. 
+To make a patch request, you must update your config.ru with Sinatra middleware which intercepts and examines each request sent. If it finds a request containing 'name: `_method`, it will customize the request type, replacing 'post' with whatever request type you enter for 'value' in the line containing `_method`. This is what supports the patch request type. 
 
 
 **config.ru**
