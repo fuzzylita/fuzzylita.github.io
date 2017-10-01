@@ -5,17 +5,18 @@ date:   2017-10-01 17:46:13 -0400
 ---
 
 
-The CRUD lab in the Sinatra secton of Flatiron's curriculum where we coded out the complete CRUD functionality, all in one go, for the first time was extraordinarily difficult for me. In addition the inner voice putting me down and telling me that I wasn't cut out for this, and that 'anyone else' would just get it (thanks a lot brain for making it worse), the logic was just not clear to me at all. 
+The first lab in the Sinatra secton of Flatiron's curriculum which built out the complete CRUD functionality for the first time was extraordinarily difficult for me. Made worse by the inner bully telling me that I wasn't cut out for programming, and that 'everyone else' gets it (thanks a lot brain), the logic was just not clear to me at all. 
 
-This walkthrough goes through each reqest, what it means, where the data is going, and what's happening at each step. Hopefully this post will both cement my knowledge for my own sake, and perhaps help others cement theirs. 
+<iframe src="https://giphy.com/embed/wkhtMgJ48QdBS" width="480" height="353" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/crying-sobs-wkhtMgJ48QdBS">via GIPHY</a></p>
 
-First, if you feel like you've hit the wall that proves you're not cut out for this path in life, I want to tell you: This lab kinda sucks. You're smart, you're capable and if you're having a hard time getting through this, at least one other person out there had a really hard time putting it all together.
+This walkthrough breaks down each section, what it means, and what's happening at each step. I hope that this post will both cement my knowledge, and perhaps help others cement theirs. 
+
+First and foremost, if you feel like you've hit the wall that proves you're not cut out for this path in life, I want to tell you: You're smart, you're definitely capable and if you're having a hard time getting through this, at least one other person out there had a *really* hard time putting it all together.
 
 
-Let's go through the steps, and what is happening along the way:
+Let's go through the steps, and what is going on along the way:
 
 **1. Create**
-
 
 The user makes a GET request to '/posts/new' by entering the address into their browser's navigation bar.
 Our controller processes that request by rendering the content at new.erb
@@ -25,7 +26,6 @@ get '/posts/new' do
   erb :new
 end
 ```
-
 
 That content consists of a form that submits a POST request to '/posts'
 
@@ -51,7 +51,6 @@ end
 ```
 
 **2. Read**
-
 
 If the controller receives a GET request to '/posts'. It responds by rendering the code defined in index.erb (below). This code displays all of the existing posts to the user (using the AR (ActiveRecord) .all method).
 
