@@ -22,11 +22,11 @@ I started in Molecular Biology - the professional equivalent to my first 'real' 
 
 I'm a good molecular biologist - theoretical and practical - but in practice, my day-to-day success was defined by how well I could do the same thing in exactly the same way. Over and over... and over.
 
-5 years into my professional life, I went a little...
+5 years into my professional life, I found myself feeling uncontrollably...
 
 <iframe src="https://giphy.com/embed/WEjAZ7sC1m8bm" width="480" height="317" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/who-cares-no-one-care-WEjAZ7sC1m8bm"></a></p>
 
-and slowly came to realize that I was in the wrong place for a lifelong career.
+and came to realize that I was not in the right place for a fulfilling lifelong career.
 
 Many of my friends are software engineers, working on really interesting problems (and a few frivolous ones). I was envious of their work and their technical know-how. So many cool things they could make. So many dryly hilarious programs, inside jokes, and stupid nonsense they could build on a whim, just for the lols. 
 
