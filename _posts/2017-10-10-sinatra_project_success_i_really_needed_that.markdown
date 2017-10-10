@@ -13,7 +13,7 @@ There were tears.
 
 <iframe src="https://giphy.com/embed/8w68TkeqzDnLa" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sad-crying-sailor-moon-8w68TkeqzDnLa"></a></p>
 
-Aggressive though it may be, I'm behind on my timeline, not at all helped by my... optimistic expectations of this section. I was both rushed and discouraged going in to the final project, after my slow pace with the last few labs. (PLAYLISTER, I'M LOOKIN' AT YOU, BUDDY.)
+Aggressive as it is, I'm behind on my timeline, not at all helped by my... optimistic expectations of this section. I was both rushed and discouraged going in to the final project, after my slow pace with the last few labs. (PLAYLISTER, I'M LOOKIN' AT YOU, BUDDY.)
 
 Thankfully, the project was a genuine relief. Similar to my CLI data gem, I had the tremendous good fortune of a solid, well defined idea going in, and one that aligned easily with the project requirements.
 
