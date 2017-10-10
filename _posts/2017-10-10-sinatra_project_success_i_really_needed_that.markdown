@@ -54,4 +54,10 @@ Blah blah blah. Here's what I did:
 
 The actual structure of the app was quite simple, and preventing users from editing drinks that don't belong to them, as well as validating the entries they submit was quick and easy.
 
-I only found that I bogged down when I got into some trouble with approaching edge cases with Rack::Flash, AKA *'What the actual f&%#% is this @^$^%# %!@%, and why would you ever !@^$%@^ with this @&@% anyway!? !*%!%@#!$%&@%ing @!%$!'*
+I only found that I bogged down when I got into some trouble with approaching alerting to problematic logins with Rack::Flash.
+
+This experience can be best summarized with: 'What **-bleep bleep-** is **-bleep-** and **-bleep bleep bleep-** ever **-bleep bleep-** AND I JUST CAN'T ANYMORE.'
+
+ANYWAY I USED FORMS TO SOLVE IT AND USED RACK::FLASH ELSEWHERE SO **-BLEEEEEEEEEEEEP-**
+
+A good time was had by all.
