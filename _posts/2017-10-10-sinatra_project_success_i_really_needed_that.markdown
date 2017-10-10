@@ -6,7 +6,7 @@ permalink:  sinatra_project_success_i_really_needed_that
 ---
 
 
-I had an incredibly difficult time with the SQL/ORM/Rack/Sinatra section of the Flatiron program. I bogged down badly in several parts, and many of the last labs were multiple day affairs. 
+I ... struggled with the SQL/ORM/Rack/Sinatra section of the Flatiron program. I bogged down badly in several parts, and many of the last labs were multiple day affairs. 
 
 There were tears.
 
