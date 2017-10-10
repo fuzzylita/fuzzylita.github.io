@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "A tricky debug for Tic Tac Toe "
-date:   2017-09-12 18:50:55 -0400
+title:      "A Tricky Debug for Tic Tac Toe "
+date:       2017-09-12 18:50:55 -0400
+permalink:  a_tricky_debug_for_tic_tac_toe
 ---
 
 
