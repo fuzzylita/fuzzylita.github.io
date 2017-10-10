@@ -30,10 +30,28 @@ In keeping with the theme of my first project (and my life), I decided to build 
 In essence, it's a simple, public recipe book for cocktails, created by "you" (me) and "your fellow users" (.. also me ..). 
 Users sign up, and - when logged in - can access and manipulate their own cocktail creations, and have view permissions to a complete public list of drinks and ingredients submitted by "fellow users" (me).
 
-Honestly, I was in *the dark place* when I went into the project, but I finished with a renewed energy, and belief that I'm following the right path in pursuing engineering professionally.
+I was definitely in *the dark place* when I went into the project, but I finished with a renewed energy, and belief that I'm following the right path in pursuing engineering professionally.
 
 Blah blah blah. Here's what I did:
 
-1. First and foremost, holy bananas; whoever made [Corneal](https://github.com/thebrianemory/corneal) is a saint. It also makes me think of eye anatomy. I can't help it. Anyway, one gem install later, and you're looking at a complete framework for my project in place. Gems, migrations, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of the project done for you. I hear this is how software engineering works, by the by.
-2. My plan for my app was very closely aligned with the project structure and relationships we build out in the earlier, (and BRUTALLY PAINFUL) playlister project, but as a result, the workflow for mine was quite intuitive. All in all, it took me about 12 horus to complete. ... probably less than playlister :}
-3. the actual structure of the app was quite simple, I only found that I bogged down when I got into some trouble with Flash 
+* First and foremost, holy bananas; whoever made [Corneal](https://github.com/thebrianemory/corneal) is a saint. It also makes me think of eye anatomy. I can't help it. Anyway, one gem install later, and you're looking at a complete framework for my project in place. Gems, migrations, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of the project done for you. I hear this is how software engineering works, by the by.
+* The data structure and the object relationships were pretty simple:
+	* A user has many cocktails
+	* A cocktail has many ingredients
+	* An ingredient has many cocktails
+	* A cocktail belongs to a user
+* Next to build out the details. My plan for my app was mercifully aligned with the project structure and relationships built out in the earlier - painful - playlister project. As a result however, the workflow for project was fairly well ingrained, and I was able to use the lab instructions for loose guidelines when I got stuck on what steps to take next. It also helped my workflow have a little bit more structure, rather than bouncing from one thing to the next
+	* User creates an account/can log in
+	* A logged in user can:
+		* Create drinks
+		* Create ingredients
+		* View their drinks
+		* View public drinks
+		* View public ingredients
+		* Update their drinks
+		* Delete their drinks
+	* CRUD!
+
+The actual structure of the app was quite simple, and preventing users from editing drinks that don't belong to them, as well as validating the entries they submit was quick and easy.
+
+I only found that I bogged down when I got into some trouble with approaching edge cases with Rack::Flash, AKA *'What the actual f&%#% is this @^$^%# %!@%, and why would you ever !@^$%@^ with this @&@% anyway!? !*%!%@#!$%&@%ing @!%$!'*
