@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Cocktail APIs for the masses!"
-date:   2017-09-15 14:28:47 -0400
+title:      "Cocktail APIs for the Masses!"
+date:       2017-09-15 14:28:47 -0400
+permalink:  bringing_it_all_together
 ---
 
 
