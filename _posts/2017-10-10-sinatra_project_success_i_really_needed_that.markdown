@@ -34,7 +34,7 @@ I was definitely in *the dark place* when I went into the project, but I finishe
 
 Blah blah blah. Here's what I did:
 
-* First and foremost, let's be frank; whoever made [Corneal](https://github.com/thebrianemory/corneal) basically did my project for me (and makes me think of the anatomy of the eye). One gem install, a couple pokes of setup, and you've got yourself all of the tedious parts of your project, done. Gems, migrations, environment setup, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of your project done for you. I'd feel bad about this, but I'm told this is how software engineering works.
+First and foremost, let's be frank; whoever made [Corneal](https://github.com/thebrianemory/corneal) basically did my project for me (and makes me think of the anatomy of the eye). One gem install, a couple pokes of setup, and you've got yourself all of the tedious parts of your project, done. Gems, migrations, environment setup, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of your project done for you. I'd feel bad about this, but I'm told this is how software engineering works.
 
 Anyway! Here's the broad strokes of the project (that I didn't miraculously receive from a gem):
 * The data structure and object relationships were pretty simple to set up:
