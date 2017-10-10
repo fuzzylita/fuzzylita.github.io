@@ -13,9 +13,9 @@ There were tears.
 
 <iframe src="https://giphy.com/embed/8w68TkeqzDnLa" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sad-crying-sailor-moon-8w68TkeqzDnLa"></a></p>
 
-Aggressive as it is, I'm behind on my timeline, not at all helped by my... optimistic expectations of this section. I was both rushed and discouraged going in to the final project, after my slow pace with the last few labs. (PLAYLISTER, I'M LOOKIN' AT YOU, BUDDY.)
+Aggressive as it is, I'm behind on my timeline, not at all helped by my... optimism for my pace through this section. I was both rushed and discouraged going in to the final project, after my hideous pace in the last few labs. (PLAYLISTER, I'M LOOKIN' AT YOU, BUDDY.)
 
-Thankfully, the project was a genuine relief. Similar to my CLI data gem, I had the tremendous good fortune of a solid, well defined idea going in, and one that aligned easily with the project requirements.
+Thankfully, the project was a genuine relief. Similar to my first project, I had the tremendous good fortune of going in with a well-defined idea of an app I'd want to (ok, do) use myself, and was able to align it with the project requirements.
 
 We were tasked with building a simple content management system which must:
   1. Follow the Sinatra MVC structure
@@ -25,9 +25,9 @@ We were tasked with building a simple content management system which must:
   5. Support some basic permissions-based functionality
   6. Support secure (heavy air-quotes) user Login/Logout
 
-In keeping with the theme of my first project (and my life), I decided to build a collaborative cocktail database.
+In keeping with the theme of my first project/life, I decided to build a collaborative cocktail database.
 
-In essence, it's a simple, public recipe book for cocktails, created by "you" (me) and "your fellow users" (.. also me ..). 
+In essence, it's a simple, public recipe book for cocktails, created by "you" (me) and "your fellow users" (... me). 
 Users sign up, and - when logged in - can access and manipulate their own cocktail creations, and have view permissions to a complete public list of drinks and ingredients submitted by "fellow users" (me).
 
 I was definitely in *the dark place* when I went into the project, but I finished with a renewed energy, and belief that I'm following the right path in pursuing engineering professionally.
@@ -58,4 +58,6 @@ This experience can be best summarized with: 'What **-bleep bleep-** is **-bleep
 
 After googling, whining, asking for help, whining, and finally determining that everything really isn't a nail I, simply solved my alert system with several hybrid notifications and a lot of **-BLEEEEEEEEEEEEP-**
 
-And hte project was done! A good time was had by all (me).
+And with minor hiccups the project was done! A good time was had by all (me).
+
+TL;DR - Use [Corneal](https://github.com/thebrianemory/corneal).
