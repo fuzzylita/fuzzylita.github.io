@@ -52,6 +52,8 @@ Anyway! Here's the broad strokes of the project (that I didn't miraculously rece
 		* View public ingredients
 		* Update their drinks
 		* Delete their drinks
+	* Account formiscellaneous validations and edge cases
+	* Apply some rudimentary styling (**Lie alert** Zero styling, rudimentary or otherwise)
 	* CRUD!
 
 The actual structure of the app was quite simple, and preventing users from editing drinks that don't belong to them, as well as validating the entries they submit was quick and easy, I only found some trouble when approaching alerts for bad logins with Rack::Flash.
