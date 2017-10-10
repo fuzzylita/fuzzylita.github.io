@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Project Success! I really needed that."
-date:       2017-10-10 06:20:55 +0000
+date:       2017-10-10 02:20:56 -0400
 permalink:  sinatra_project_success_i_really_needed_that
 ---
 
