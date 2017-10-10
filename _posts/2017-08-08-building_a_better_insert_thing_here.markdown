@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Building a better {{insert thing here}}"
-date:   2017-08-08 14:45:02 -0400
+title:      "Building a Better {{Insert Thing Here}}"
+date:       2017-08-08 14:45:02 -0400
+permalink:  building_a_better_insert_thing_here
 ---
 
 I *love* to create things.
