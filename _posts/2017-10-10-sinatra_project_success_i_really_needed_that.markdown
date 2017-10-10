@@ -52,7 +52,7 @@ Anyway! Here's the broad strokes of the project (that I didn't miraculously rece
 		* View public ingredients
 		* Update their drinks
 		* Delete their drinks
-	* Account formiscellaneous validations and edge cases
+	* Account for miscellaneous validations and edge cases
 	* Apply some rudimentary styling (**Lie alert** Zero styling, rudimentary or otherwise)
 	* CRUD!
 
