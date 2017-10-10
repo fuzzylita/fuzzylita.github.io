@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "The Joy, The Pain, The Tears... The ... SQL to Sinatra section"
+title:      "The Joy, the Pain, the Tears... The SQL to Sinatra Section"
 date:       2017-10-10 02:20:56 -0400
 permalink:  sinatra_project_success_i_really_needed_that
 ---
@@ -34,8 +34,10 @@ I was definitely in *the dark place* when I went into the project, but I finishe
 
 Blah blah blah. Here's what I did:
 
-* First and foremost, holy bananas; whoever made [Corneal](https://github.com/thebrianemory/corneal) is a saint. It also makes me think of eye anatomy. I can't help it. Anyway, one gem install later, and you're looking at a complete framework for my project in place. Gems, migrations, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of the project done for you. I hear this is how software engineering works, by the by.
-* The data structure and the object relationships were pretty simple:
+* First and foremost, let's be frank; whoever made [Corneal](https://github.com/thebrianemory/corneal) basically did my project for me (and makes me think of the anatomy of the eye). One gem install, a couple pokes of setup, and you've got yourself all of the tedious parts of your project, done. Gems, migrations, environment setup, complete file tree, all of the associated Model/View/Controller folders, everything, everything. CRUD in a box. There's not much credit to give myself for this. Push button, receive 95% of your project done for you. I'd feel bad about this, but I'm told this is how software engineering works.
+
+Anyway! Here's the broad strokes of the project (that I didn't miraculously receive from a gem):
+* The data structure and object relationships were pretty simple to set up:
 	* A user has many cocktails
 	* A cocktail has many ingredients
 	* An ingredient has many cocktails
@@ -56,8 +58,10 @@ The actual structure of the app was quite simple, and preventing users from edit
 
 This experience can be best summarized with: 'What **-bleep bleep-** is **-bleep-** and **-bleep bleep bleep-** ever **-bleep bleep-** AND I JUST CAN'T ANYMORE.'
 
-After googling, whining, asking for help, whining, and finally determining that everything really isn't a nail I, simply solved my alert system with several hybrid notifications and a lot of **-BLEEEEEEEEEEEEP-**
+It seems that there was a problem with using this system of notification for any of my routes involving user validation. My setup was correct, and I get notifications just fine from other requests in the app. Somehow, once you get to user logins, it all goes to pot. While the structure of the requests were no different, the messages just... didn't... work. I spent several hours investigating in earnest myself, and then recruited some more experienced eyes, in the hopes that it was just ignorance in its finest form.
 
-And with minor hiccups the project was done! A good time was had by all (me).
+After googling, whining, receiving help, my genrous help whining, and all of us finally determining that everything is [not a nail after all](https://en.wikipedia.org/wiki/Law_of_the_instrument), I simply solved my alert system with several hybrid notification systems and a great deal of *%#*!@ and #%*&$@% *EVEN AFTER I *!#@&*%.
+
+And the project was done! A good time was had by all (me).
 
 TL;DR - Use [Corneal](https://github.com/thebrianemory/corneal).
