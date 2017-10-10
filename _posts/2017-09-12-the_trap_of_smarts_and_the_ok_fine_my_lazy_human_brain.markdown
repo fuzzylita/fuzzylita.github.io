@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "My lazy brain"
-date:   2017-09-12 15:21:57 -0400
+title:      "My Feeble, Human Brain"
+date:       2017-09-12 15:21:57 -0400
+permalink:  the_trap_of_smarts_and_the_ok_fine_my_lazy_human_brain
 ---
 
 A number of bad habits that I didn't know I had have become very apparent to me while learning programming. Foremost among them is my tendency to jump straight to solution mode. 
