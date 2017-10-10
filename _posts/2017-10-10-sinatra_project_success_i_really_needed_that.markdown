@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Sinatra Project Success! I really needed that."
+title:      "Sinatra Project Success! I really needed that. (WIP)"
 date:       2017-10-10 02:20:56 -0400
 permalink:  sinatra_project_success_i_really_needed_that
 ---
