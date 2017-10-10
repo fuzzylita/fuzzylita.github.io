@@ -25,11 +25,12 @@ We were tasked with building a simple content management system which must:
   5. Support some basic permissions-based functionality
   6. Support secure (heavy air-quotes) user Login/Logout
 
-In keeping with the theme of my first project, I decided to build a collaborative cocktail database. In essence, it's a public recipe book for cocktails, including ingredients and instructions. Users signup, and - when logged in - could access and manipulate their own cocktail creations, as well as viewing permissions to a complete public list of all drinks and drink ingredients submitted by their fellow users.
+In keeping with the theme of my first project, I decided to build a collaborative cocktail database. 
+In essence, it's a public recipe book for cocktails, displaying drinks, ingredients and instructions created by "you" (me) and "your fellow users" (.. also me ..). Users signup, and - when logged in - can access and manipulate their own cocktail creations, and have viewing permissions to a complete public list of all drinks and drink ingredients submitted by their "fellow users" (Me).
 
-The project was a relative breeze, and I genuinely enjoyed making my app. I'm pretty proud of the outcome!
+Honestly, I was in *the dark place* when I went into the project, but I finished with a renewed energy, and belief that I'm following the right path in pursuing engineering professionally.
 
-:
+Blah blah blah. Here's what I did:
 
 1. Holy bananas, let me tell you about Corneal. Whoever made this project is a saint. One gem install later, and I had the complete framework in place, including gems, placeholders for my migrations, the complete file tree and all of the associated Model/View/Controller folders for every table. EVEN THE INHERITENCE OMGGGG. CRUD in a box.
 2. My plan for my app was very closely aligned with the project structure and relationships we build out in the earlier, (and BRUTALLY PAINFUL) playlister project, but as a result, the workflow for mine was quite intuitive. All in all, it took me about 12 horus to complete. ... probably less than playlister :}
