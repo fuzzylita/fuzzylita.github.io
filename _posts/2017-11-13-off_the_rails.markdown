@@ -104,4 +104,5 @@ If there is no drink ID, we know we're dealing with a brand new drink, so we wan
     <% end %>
 ```
 
+Of course, the setup of the form is only part of the challenge. We also need to handle the creation of the objects 
 
