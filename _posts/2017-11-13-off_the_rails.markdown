@@ -35,30 +35,39 @@ Rather than spending 8 paragraphs describing the project in detail, a visual sho
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="49xdn7X"><a href="//imgur.com/49xdn7X"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-The 'interesting' challenge really came with trying to build out the complex form, and honestly this is where I both learned the most, and almost quit.
+The 'interesting' challenge really came with trying to build out the complex form, and honestly this is where I both learned the most, and almost quit. I'll focus on this for the remainder of the blog.
 
 In the case of my application, users will interact with the nested form when they either create a new, or edit an existing cocktail. The form is a partial, separated out with some very basic logic to show appropriate fields for ingredients based on the action the user is taking. Let's take a look at the code. There's some fomatting and code to display the partial with the apporopriate locals, but I'll leave it for simplicity:
+
+The form uses Rails' form_for helpers, to wrap around a Drink object, and generate HTML fields with the appropriate syntax to create objects automatically. You can see I'm taking advantage of a custom URL with drink.id as the last parameter, so that whether I'm editing or creating a new drink, I can use the same form.
 
 ```
     <%= form_for @drink, :url => "/users/#{current_user.id}/drinks/#{@drink.id}" do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %> <br>
+```
 
+If there's a drink ID, then we know we're editing an existing drink, so I can display the page a little differently. We want the user to see the ingredients that they've already selected, as well as an option to add additional ingreddients.
+
+The code below iterates through each ingredient associated with a drink, displaying them to the user along with their quantity. Then the user will see a single field to add a new ingredient and quantity, if they wish to expand on their existing drink.
+
+```
     <% if @drink.id %>
       <h2>Select an Ingredient</h2>
       <% @drink.ingredients.each.with_index do |ingredient, index| %>
         <%= f.select :ingredients, Ingredient.all.collect {|x| [x.name, x.id]}, {:include_blank => '-', :selected => ingredient.id}, :name => "drink[ingredients][#{index}][id]" %>
           <label>Quantity</label>
           <input type="text" name="drink[ingredients][<%= index %>][quantity]" value="<%= find_quantity @drink, ingredient %>"><br>
-      <% end %>
-			
-```
-```
+      <% end %>		
 
       <br><h2>Add Ingredients</h2><br>
       <%= f.select :ingredients, Ingredient.all.collect {|x| [x.name, x.id]}, {:include_blank => '-'}, :name => "drink[ingredients_attributes][0][id]" %>
           <label>Quantity</label>
           <input type="text" name="drink[ingredients_attributes][0][quantity]"><br>
+```
+
+
+```
     <% else %>
     <br><h2>Add a new Ingredient</h2><br>
       <%= f.select :ingredients, Ingredient.all.collect {|x| [x.name, x.id]}, {:include_blank => '-'}, :name => "drink[ingredients_attributes][0][id]" %>
