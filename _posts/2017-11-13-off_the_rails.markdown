@@ -8,18 +8,17 @@ permalink:  off_the_rails
 
 Wow. Ok, so Rails.
 
-At risk of repeating myself, I definitely didn't feel confident going into this project. I know, I know, go back to any of the other sections and you'll see me say the same thing. Blah blah, wasn't prepared, project was a breeze, learned so much, whatever. Not quite so successful this time around.
+At risk of repeating myself, I definitely didn't feel confident going into the final Rails project for Flatiron. I know, I know, go back to any of the other sections and you'll see me say the same thing. Blah blah, wasn't prepared, project was a breeze, learned so much, whatever. Not quite so successful this time around.
 
-Rails was the third, and by *far* the densest section of the Flatiron curriculum. Rails is behemoth, taking years of professional work to really master, and I get that. Still there were some requirements for this project that were awfully chewy to get through, as the content of the section had to be compacted for sanity and timely completion. Frankly, certain functionality in Rails is not very well documented, and required much keyboard bashing and hope. 
+Rails was the third, and by *far* the densest section. 
 
-The requirements for the final project were fairly straightforward, but extensive, covering the basics of a rudimentary, but complete and fully functional web application. Having done fairly well on the curriculum for most of the Rails section, most requiremetns were not too bad.
+The requirements for the final project were fairly straightforward, but extensive, covering the basics of a rudimentary, but complete and fully functional web application. Having done fairly well on the curriculum for most of the Rails section, most requirements were not too bad, but some functionality in Rails is complex, and there were some requirements for this project that were awfully chewy to get through.
 
-There were only two real ringers, which I had struggled with throughout the later curriculum:
-* Had to include a join table with a writeable property, that could be writtent to through a complex nested form
-* The nested form had to write to multiple models, taking advantage of the object_attributes= methods.
+There were two real challenges, which were both required, and which I had been struggling a bit throughout the later parts of the curriculum:
+* Had to include a join table with a writeable property, that could be written to through a complex nested form
+* The nested form had to write to multiple models, taking advantage of the pattern of `object_attributes=` methods.
 
-I decided to recreate and expand on my sinatra project, just built on Rails, with improvements and increased functionality.
-The app is a fairly simple cocktail database. 
+I decided to expand on the concept from my sinatra project, just built on Rails, with improvements and increased functionality. The app is a fairly simple cocktail database. 
 
 Users can sign up, and create cocktails recipes for their own account. Users have complete control over the recipes that they own, with the ability to edit and delete recipes as they wish. In addition, users can view a public page of all recipes in the database, but cannot edit them. Users can add ingredients, but can't delete them, as ingredients can be used by all recipes.
 
@@ -35,9 +34,9 @@ Rather than spending 8 paragraphs describing the project in detail, a visual sho
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="49xdn7X"><a href="//imgur.com/49xdn7X"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-The 'interesting' challenge really came with trying to build out the complex form, and honestly this is where I both learned the most, and almost quit forever. I'll focus on this for the remainder of this post.
+The 'interesting' challenge really came with trying to build out the complex form to write to multiple objects, and honestly this is where I both learned the most, and almost quit forever. I'll focus on this for the remainder of this post.
 
-In the case of my application, users will interact with the nested form when they either create a new, or edit an existing cocktail. The form is a partial, separated out with some very basic logic to show appropriate fields for ingredients based on the action the user is taking. Let's take a look at the code. There's some fomatting and code to display the partial with the apporopriate locals, but I'll leave it for simplicity:
+In the case of my application, users interact with the nested form when they either create a new, or edit an existing cocktail. To keep my code DRY, I used a partial, separated out with some very basic logic to show appropriate fields for ingredients based on the action the user is taking. Let's take a look at the the bulk of the form code, with styling and calling of the template removed for simplicity:
 
 The form for a new drink uses Rails' form_for helper to wrap around a Drink object and generate HTML fields with the appropriate syntax to create these drink objects automatically. You can see I'm taking advantage of a custom URL with drink.id as the last parameter, so that whether I'm editing or creating a new drink, I can use the same form.
 
@@ -104,7 +103,10 @@ If there is no drink ID, we know we're dealing with a brand new drink, so we wan
     <% end %>
 ```
 
-Of course, the setup of the form is only part of the challenge. We also need to handle the creation of the objects within the Drink model. Rails supports interaction with different objects from within a model using has_nested_attributes_for, which will automatically create a object_attributes= method. For our purposes however, we'll need to interact with two different models, and in a rather custom way, so we'll override this and create out own methods.
+Of course, the setup of the form is only part of the challenge. We also need to handle the creation of the objects within the Drink model. Rails supports interaction with different objects from within a model using has_nested_attributes_for, which will automatically create a object_attributes= method. For our purposes however, we'll need to interact with two different models, and in a rather custom way, so we'll override this and create our own methods.
+
+The easier of the two functions is to create a new drink from the existing ingredients.
+I've created a custom function here called ingredients_attributes to do just that. Whichever ingredient the user selects from the dropdown will be pushed through to the params hash as the value associated with the key ```drink[ingredients_attributes][X][id]```, and the quantity will be pushed into params as ```drink[ingredients_attributes][X][quantity]```. We can then use Rails power to create our new drink. Note, adding an ingredient to drink.ingredients will automatically create a drink_ingredient. Becasue of this, we can pull it, and assign a quantity.
 
 ```
    def ingredients_attributes=(ingredients_attributes)
@@ -121,12 +123,17 @@ Of course, the setup of the form is only part of the challenge. We also need to 
       self.save
     end
   end
+	```
+	
+Editing a drink was a much more complicated process. For ease of understanding, explanation is provided as notes inline.
 
+```
   def ingredients=(ingredients)
-    #{"0"=>{"id"=>"5", "quantity"=>"2"}, "1"=>{"id"=>"7", "quantity"=>""}, "2"=>{"id"=>"3", "quantity"=>""}}
+	 #This is what the ingredients param looks like
+   #{"0"=>{"id"=>"5", "quantity"=>"2"}, "1"=>{"id"=>"7", "quantity"=>""}, "2"=>{"id"=>"3", "quantity"=>""}}
     
-    # This is now a static array. We need this to keep track of the originial state of the drink
-    # otherwise we'd modify the array as you iterate. Bad.
+    # We need this to keep track of the originial state of the drink, but don't want to affect the original hash.
+    # otherwise we'd modify as we iterate, and weird values would be returned. We'll duplicate it.
     original_ingredients = self.ingredients.to_ary
 
     ingredients.each do |ing_idx, ingredient_object|
@@ -167,4 +174,6 @@ Of course, the setup of the form is only part of the challenge. We also need to 
       self.save
     end
 ```
+
+As you can see, there was quite a lot of trial and error, and ultimately some pretty complex problems involved in building out code to support something so seemingly simple, but this worked out, and the app behaves as expected, both when updating and editing. It was fun, sometimes frustrating, but a great learning experience!
 
