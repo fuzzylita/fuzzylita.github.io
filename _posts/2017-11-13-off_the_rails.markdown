@@ -104,5 +104,67 @@ If there is no drink ID, we know we're dealing with a brand new drink, so we wan
     <% end %>
 ```
 
-Of course, the setup of the form is only part of the challenge. We also need to handle the creation of the objects 
+Of course, the setup of the form is only part of the challenge. We also need to handle the creation of the objects within the Drink model. Rails supports interaction with different objects from within a model using has_nested_attributes_for, which will automatically create a object_attributes= method. For our purposes however, we'll need to interact with two different models, and in a rather custom way, so we'll override this and create out own methods.
+
+```
+   def ingredients_attributes=(ingredients_attributes)
+    ingredients_attributes.each do |key, value|
+      next if value[:id].blank?
+      
+      ingredient = Ingredient.find_by(:id => value[:id])
+
+      self.ingredients << ingredient
+
+      dr_ing = self.drink_ingredients.last
+      dr_ing.quantity = value[:quantity]
+      dr_ing.save
+      self.save
+    end
+  end
+
+  def ingredients=(ingredients)
+    #{"0"=>{"id"=>"5", "quantity"=>"2"}, "1"=>{"id"=>"7", "quantity"=>""}, "2"=>{"id"=>"3", "quantity"=>""}}
+    
+    # This is now a static array. We need this to keep track of the originial state of the drink
+    # otherwise we'd modify the array as you iterate. Bad.
+    original_ingredients = self.ingredients.to_ary
+
+    ingredients.each do |ing_idx, ingredient_object|
+      original_ing = original_ingredients[ing_idx.to_i]
+      
+      # If the user sets the selection field to '-', we will remove the ing
+      # from the drink.
+      if ingredient_object[:id] == ""
+        self.ingredients.delete(original_ing)
+        next
+      end
+
+      # We need to see if we need to update the ingredient, or just the quantity
+      # If the original ingredient ID at the index in the hash matches the ID within
+      # the hash at that index, they're the same and you just need to update quantity
+
+      if original_ing.id == ingredient_object[:id].to_i
+        dr_ing = DrinkIngredient.find_by(
+          :drink_id => self.id, 
+          :ingredient_id => original_ing.id
+          )
+        dr_ing.quantity = ingredient_object[:quantity]
+        dr_ing.save
+        next
+      end
+
+      # If the user has changed the original ingredient, we need to add it, 
+      # delete the old one, and set the quantity
+      
+      self.ingredients.delete(original_ing)
+      self.ingredients << Ingredient.find(ingredient_object[:id].to_i)
+      dr_ing = DrinkIngredient.find_by(
+        :drink_id => self.id, 
+        :ingredient_id => ingredient_object[:id].to_i
+        )
+      dr_ing.quantity = ingredient_object[:quantity]
+      dr_ing.save
+      self.save
+    end
+```
 
