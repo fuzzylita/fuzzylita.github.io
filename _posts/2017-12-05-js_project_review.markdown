@@ -17,13 +17,13 @@ For the majority of you who religiously read my blog posts and keep up to date o
 
 By comparison, the requirements for our JavaScript section project were fairly lightweight, but I'll explain each of them in tedious detail to make up for it.
 
-We were tasked with taking our existing Rails application and refactoring it to have a jQuery frontend. I'll sketch out each reqeuirement, and how I addressed it below.
+We were tasked with taking our existing Rails application and refactoring it to have a jQuery frontend. I'll sketch out each requirement, and how I addressed it below.
 
 *** THE DETAILS ***
 
 # Requirement 1:
 ## Must translate the JSON responses into Javascript Model Objects, with at least one method on the prototype. 
-I'll explain this requirement first, as it was necessary to complete any of the other project requirements. The core of the goal here was that we could not simply make a request, and render data directly from the response to the DOM. Instead, the response to a request (in JSON) should be used to instantiate new Objects, and we should use properties of these newly instantiated objects to determine the content on the screen.
+I'll explain this requirement first, as it was necessary to complete any of the other project requirements. The core of the goal here was that we could not simply make a request and render data directly from the response to the DOM. Instead, the response to a request (in JSON) should be used to instantiate new Objects, and we should use properties of these newly instantiated objects to determine the content on the screen.
 
 To allow my existing Rails models to be represented in JSON, I used Rails' Active Model Serializer gem, which is explicitly part of the requirement below. This gem allows you to selectively convert properties of your models into JSON. In preparation for the rest of the requirements, I created a Drink Object constructor using the class syntax, although it could have been done through a constructor function instead. 
 
@@ -255,7 +255,7 @@ In my project this was covered by the ingredients to the drink, which I then ren
 # Requirement 5:
 ## Must use your Rails API and a form to create a resource and render the response without a page refresh.
 
-I address this requirement in two places, to a lesser extent, I address this within the drink creation page. In my rails app, I had five new ingredient fields so that the user could create a drink as large as they like. that's not very JS'y however. In my application, I updated the performance of this page so that there is one field on the page when you render, but you can add as many new fields as you wish by clicking the 'add another ingredient' button.
+I address this requirement in two places, to a lesser extent, I address this within the drink creation page. In my rails app, I had five new ingredient fields so that the user could create a drink as large as they like. that's not very JS'y however. In my application, I updated the UX of this page so that there is one field on the page when you render, but you can add as many new fields as you wish by clicking the 'add another ingredient' button.
 
 On my partial for the new and edit drink pages, you'll see that the form contains a single field as before for a new ingredient by default. Notice the two divs surrounding the selector. There is an ingredient selector surrounding the selection box and quantity field, and a second div called the ingredient appender. 
 
