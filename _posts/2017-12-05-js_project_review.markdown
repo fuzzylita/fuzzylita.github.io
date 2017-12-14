@@ -4,15 +4,15 @@ title:      "At Least I'm Consistent (A wordy introduction to a JavaScript refac
 date:       2017-12-05 14:39:35 -0500
 permalink:  js_project_review
 ---
-​
+
 I'm not doing it this time. I'm not starting out my blog with the same paragraph, expressing my lack of confidence in my familiarity with the material, not going to talk about how it came together surprisingly and I retained more than I thought. If you want to know, you can read the first paragraph of [any](http://litastephenson.com/2017/09/15/bringing_it_all_together/) of my [other](https://learn.co/blog/blog_posts/8623/edit) project [posts](http://litastephenson.com/off_the_rails). Have a good time, it goes like this:
-​
+
 * OH HOLY HELL. I KNOW NOTHING
 * I'M GOING TO COMPLETELY FAIL AT THIS PROJECT, THIS IS IT. THIS IS THE END
 * OH IT'S DONE.
-​
+
 Wooooo. 🍺
-​
+
 For the majority of you who religiously read my blog posts and keep up to date on my latest and greatest challenges, you'll have a solid recollection of the Rails project we were tasked with. It was a challenging undertaking, with fairly extensive requirements. If you're interested in reliving the thrilling tale, or for the one or two of you who may not have read it several times already, you can find details in the last of the links above.
 
 By comparison, the requirements for our JavaScript section project were fairly lightweight, but I'll explain each of them in tedious detail to make up for it.
@@ -21,8 +21,8 @@ We were tasked with taking our existing Rails application and refactoring it to 
 
 *** THE DETAILS ***
 
-### Requirement 1:
-#### Must translate the JSON responses into Javascript Model Objects, with at least one method on the prototype. 
+# Requirement 1:
+## Must translate the JSON responses into Javascript Model Objects, with at least one method on the prototype. 
 I'll explain this requirement first, as it was necessary to complete any of the other project requirements. The core of the goal here was that we could not simply make a request, and render data directly from the response to the DOM. Instead, the response to a request (in JSON) should be used to instantiate new Objects, and we should use properties of these newly instantiated objects to determine the content on the screen.
 
 To allow my existing Rails models to be represented in JSON, I used Rails' Active Model Serializer gem, which is explicitly part of the requirement below. This gem allows you to selectively convert properties of your models into JSON. In preparation for the rest of the requirements, I created a Drink Object constructor using the class syntax, although it could have been done through a constructor function instead. 
@@ -59,8 +59,8 @@ class Drink {
 }
 ```
 
-### Requirement 2:
-#### Must render at least one index page via jQuery and an Active Model Serialization JSON Backend. 
+# Requirement 2:
+## Must render at least one index page via jQuery and an Active Model Serialization JSON Backend. 
 
 I addressed this requirement in three places in my application, due to the structure of my Rails app. I have three separate index pages. I show a user an index of their own drinks, I allow users to view a public view of all of the drinks, where they can see creation/creator information. I also show an index page for the ingredients available for the drinks. All were refactored to update via jQuery. I will specifically discuss the public index page.
 
@@ -145,8 +145,8 @@ function linkTo(name, path) {
 }
 ```
 
-### Requirement 3:
-#### Must render at least one show page via jQuery and an Active Model Serialization JSON Backend.
+# Requirement 3:
+## Must render at least one show page via jQuery and an Active Model Serialization JSON Backend.
 Similar to rendering the index page, I have several different show pages, a public show page where a user can rate a drink created by any user, a private show page where the user can edit their own drink and a show page which shows drinks filtered by my scope method.
 
 I will discuss the public show page. 
@@ -222,8 +222,8 @@ function getDrink(path) {
 
 ```
 
-### Requirement 4:
-#### The rails API must reveal at least one has-many relationship in the JSON that is then rendered to the page.
+# Requirement 4:
+## The rails API must reveal at least one has-many relationship in the JSON that is then rendered to the page.
 My Drink object has many drink_ingredients. Active Model serializer allows me to define the has_many relationship, which can then be represented in the JSON.
 
 ```ruby
@@ -252,8 +252,8 @@ end
 
 In my project this was covered by the ingredients to the drink, which I then render in the iteration through the ingredients list shown above.
 
-### Requirement 5:
-#### Must use your Rails API and a form to create a resource and render the response without a page refresh.
+# Requirement 5:
+## Must use your Rails API and a form to create a resource and render the response without a page refresh.
 
 I address this requirement in two places, to a lesser extent, I address this within the drink creation page. In my rails app, I had five new ingredient fields so that the user could create a drink as large as they like. that's not very JS'y however. In my application, I updated the performance of this page so that there is one field on the page when you render, but you can add as many new fields as you wish by clicking the 'add another ingredient' button.
 
