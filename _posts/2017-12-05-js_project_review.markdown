@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "At Least I'm Consistent (A wordy introduction to a JavaScript refactor)"
+title:      "At Least I'm Consistent (A wordy breakdown of a jQuery refactor)"
 date:       2017-12-05 14:39:35 -0500
 permalink:  js_project_review
 ---
