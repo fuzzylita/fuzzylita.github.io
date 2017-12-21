@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The home stretch"
-date:       2017-12-21 20:33:44 +0000
+date:       2017-12-21 15:33:45 -0500
 permalink:  the_home_stretch
 ---
 
